@@ -1,0 +1,10 @@
+<h1> All articles </h1>
+<ul id ="articles">
+  <% @articles.each do |article| %>
+    <li><%= link_to article.title, article_path(article) %> </li>
+    <%end%>
+</ul>
+
+
+<!---If the clause started with <%, the result of the ruby code will be hidden
+If the clause started with <%=, the result of the ruby code will be output in place of the clause --->
